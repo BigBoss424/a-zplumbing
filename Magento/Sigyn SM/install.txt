@@ -1,0 +1,31 @@
+** Installation **
+
+Step 1) Transfer the app- and skin-folder to your local Magento-installation using your favourite FTP client
+Step 2) Go to the Magento Admin, and under System -> Settings -> Design, add the text "sigyn-smtheme" in the skin-, template,- and layout-fields
+Step 3) Still in Magento Admin, go to the CMS -> Static block section and create a new Static block with identifier "customercenter". Add the code below:
+
+<ul>
+ <li class="first"><a href="{{store url=""}}faq">FAQ</a></li>
+ <li><a href="{{store url=""}}conditions">Conditions</a></li>
+ <li><a href="{{store url=""}}delivery">Delivery</a></li>
+ <li><a href="{{store url=""}}returnrefund">Return & Refund</a></li>
+ <li class="last"><a href="{{store url=""}}contacts">Contact</a></li>
+</ul>
+
+Remember to create a CMS page for each of these pages (identifier "faq", "conditions", etc).
+
+Step 4) Go to System -> Cache control, and Refresh/Update all Cache settings
+Step 5) Reload your Magento store and the new theme is up running!
+
+Notes:
+- The frontpage is empty by default so you'll need to add content here yourself. We've used the Silverthemes.com Simpleboard-widget
+on the demo-store, but these widgets must be purchased separately from the free Magento theme.
+- To change the logo just replace the logo.gif in the images-folder of the theme with your own. Always remember to also replace the
+logo_email.gif and logo_print.gif with your own, as you wouldnt want to use the default Magento-logo in the customer emails.
+
+For more details read the Sigym Smashing Magazine wiki instructions at:
+http://www.silverthemes.com/wiki/doku.php?id=sigynsm
+
+Happy Ecommerce! :-)
+
+Magento theme designed by Silverthemes.com
